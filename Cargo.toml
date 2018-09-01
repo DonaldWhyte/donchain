@@ -3,4 +3,14 @@ name = "donchain"
 version = "0.1.0"
 authors = ["Donald Whyte <donaldwhyte0@gmail.com>"]
 
+[lib]
+name = "donchain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "donchain"
+path = "src/bin/main.rs"
+
 [dependencies]
+byteorder = "*"
+sha3 = "*"
