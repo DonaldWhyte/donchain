@@ -30,7 +30,11 @@ impl Block {
     {
         // TODO: can this copy be avoided? maybe, but doesn't matter, since
         // copy will be needed anyway?
-        assert!(data.len() <= BLOCK_SIZE, "TODO");
+        assert!(
+            data.len() <= BLOCK_SIZE,
+            "Got {} bytes of data, but maximum data size is {}",
+            data.len(),
+            BLOCK_SIZE);
         let mut data_buffer: BlockData = [0; BLOCK_SIZE];
         data_buffer.copy_from_slice(data.as_slice());
 
