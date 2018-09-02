@@ -13,4 +13,5 @@ path = "src/bin/main.rs"
 
 [dependencies]
 byteorder = "*"
+chrono = "*"
 sha3 = "*"
